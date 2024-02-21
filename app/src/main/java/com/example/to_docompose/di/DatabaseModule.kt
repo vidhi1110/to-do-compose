@@ -24,5 +24,6 @@ object DatabaseModule {
             DATABASE_NAME
         ).build()
 
+    @Provides
     fun provideDao(database: ToDoDatabase) = database.toDoDao()
 }
